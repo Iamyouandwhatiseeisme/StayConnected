@@ -7,7 +7,7 @@ export default function Signup() {
     <div className="h-screen w-full bg-gradient-to-r from-blue-500  via-purple-500 to-pink-500 animate-gradient flex flex-col items-center justify-center ">
       <div className="h-3/4 w-150 border-2 border-white rounded-2xl bg-gray-200 flex flex-col items-center justify-center">
         <div className="bg-white w-120 h-80 border border-gray-500 rounded-2xl flex flex-col items-center justify-start p-5">
-          <div className="border  border-gray-400  bg-white rounded-2xl w-40 h-10 flex flex-row text-sm overflow-hidden items-center justify-center">
+          <div className="border  border-gray-400  bg-white rounded-2xl min-w-48 h-10 flex flex-row text-sm overflow-hidden items-center justify-center">
             <img
               className=" object-fill h-10 rounded-2xl"
               src="/Logo.jpg"
