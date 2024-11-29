@@ -18,10 +18,13 @@ export default {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-    },
-    width: {
-      120: "400px",
-      150: "680px",
+      height: {
+        14: "52px",
+      },
+      width: {
+        120: "400px",
+        150: "680px",
+      },
     },
   },
   plugins: [],

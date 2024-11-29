@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { Input } from "../../components/ui/input";
 import { Button } from "../../components/ui/button";
+import { redirect } from "next/navigation";
 
 export default function Login() {
   const [email, setEmail] = useState<string | null>(null);
@@ -50,10 +51,18 @@ export default function Login() {
             type="password"
             placeholder="Password"
           />
+          <div className="h-14"></div>
 
           <div className="flex flex-row gap-10">
             <Button disabled={isFormInvalid}>Login</Button>
-            <Button className="bg-gray-400">Register</Button>
+            <Button
+              className="bg-gray-400"
+              onClick={() => {
+                redirect("/signup");
+              }}
+            >
+              Register
+            </Button>
           </div>
         </div>
       </div>
