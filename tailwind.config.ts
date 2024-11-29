@@ -19,6 +19,10 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
     },
+    width: {
+      120: "400px",
+      150: "680px",
+    },
   },
   plugins: [],
 } satisfies Config;
