@@ -2,7 +2,7 @@ import React from "react";
 import { Input } from "../../components/ui/input";
 import { Button } from "../../components/ui/button";
 
-export default function Login() {
+export default function Signup() {
   return (
     <div className="h-screen w-full bg-gradient-to-r from-blue-500  via-purple-500 to-pink-500 animate-gradient flex flex-col items-center justify-center ">
       <div className="h-3/4 w-150 border-2 border-white rounded-2xl bg-gray-200 flex flex-col items-center justify-center">
@@ -25,10 +25,15 @@ export default function Login() {
             type="password"
             placeholder="Password"
           />
+          <Input
+            className="p-2 m-2 w-80"
+            type="password"
+            placeholder="Confirm Password"
+          />
 
           <div className="flex flex-row gap-10">
-            <Button>Login</Button>
-            <Button className="bg-gray-400">Register</Button>
+            <Button className="bg-gray-400">Login</Button>
+            <Button>Register</Button>
           </div>
         </div>
       </div>
