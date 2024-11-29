@@ -35,22 +35,7 @@ export default function Signup() {
       setPasswordsMatchError(null);
     }
   };
-  // const validateForm = () => {
-  //   const invalid =
-  //     !email || error !== null || !password || passWordError !== null;
-  //   console.log(
-  //     !email,
-  //     "email",
-  //     error !== null,
-  //     "error",
-  //     !password,
-  //     "password",
-  //     password
-  //     // passWordError !== null,
-  //     // "passwordError"
-  //   );
-  //   setIsFormInvalid(invalid);
-  // };
+
   useEffect(() => {
     const invalid =
       !email ||
@@ -93,8 +78,8 @@ export default function Signup() {
   };
 
   return (
-    <div className="h-screen w-full bg-gradient-to-r from-blue-500  via-purple-500 to-pink-500 animate-gradient flex flex-col items-center justify-center ">
-      <div className="h-3/4 w-150 border-2 border-white rounded-2xl bg-gray-200 flex flex-col items-center justify-center">
+    <main className="h-screen w-full bg-gradient-to-r from-blue-500  via-purple-500 to-pink-500 animate-gradient flex flex-col items-center justify-center ">
+      <div className="border-2 w-150 h-96 border-white rounded-2xl bg-gray-200 flex flex-col items-center justify-center">
         <div className="bg-white w-120 h-80 border border-gray-500 rounded-2xl flex flex-col items-center justify-start p-5">
           <div className="border  border-gray-400  bg-white rounded-2xl min-w-48 h-10 flex flex-row text-sm overflow-hidden items-center justify-center">
             <img
@@ -146,6 +131,6 @@ export default function Signup() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
