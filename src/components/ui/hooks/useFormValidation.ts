@@ -8,6 +8,7 @@ export const useFormValidation = () => {
   const [passwordsMatchError, setPasswordsMatchError] = useState<string | null>(
     null
   );
+  const [userName, setUserName ] = useState<string | null>(null);
   const [isFormInvalid, setIsFormInvalid] = useState<boolean>(true);
 
   const validateEmail = (email: string) => {
@@ -66,18 +67,27 @@ export const useFormValidation = () => {
     }
   };
 
+  const handleUserName = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setUserName(value);
+  }
+  
+
   useEffect(() => {
     const invalid =
       !email ||
       error !== null ||
       !password ||
       passWordError !== null ||
-      passwordsMatchError !== null;
+      passwordsMatchError !== null ||
+      !userName;
 
     setIsFormInvalid(invalid);
   }, [email, error, password, passWordError, passwordsMatchError]);
 
   return {
+    handleUserName,
+    userName,
     email,
     error,
     password,
